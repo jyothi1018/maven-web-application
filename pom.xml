@@ -96,7 +96,13 @@
 	      <id>SNAPSHOT</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
 	      <url>http://ec2-13-234-112-225.ap-south-1.compute.amazonaws.com:8081/repository/filpkart-SNAPSHOT/</url>
-	    </snapshotRepository>
+	    </snapshotRepository>	  
+	      <repository>
+	      <id>nexus</id>
+	      <name>Mithun Technologies Releases Nexus Repository</name>
+	      <url>http://ec2-13-234-112-225.ap-south-1.compute.amazonaws.com:8081/repository/filpkart-proxy/</url>
+	    </repository>
+		
 	</distributionManagement>
 	
 	<build>
