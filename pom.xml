@@ -97,14 +97,16 @@
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
 	      <url>http://ec2-13-234-112-225.ap-south-1.compute.amazonaws.com:8081/repository/filpkart-SNAPSHOT/</url>
 	    </snapshotRepository>	  
-	     
-		<repositories>
-	       <repository>
-	      <id>nexus</id>
-	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://ec2-13-234-112-225.ap-south-1.compute.amazonaws.com:8081/repository/filpkart-proxy/</url>
-	    </repository>
-		</repositories>
+	     <repositories>
+        <repository>
+          <id>nexus</id>
+          <name>Repository for JDK 1.4 builds</name>
+          <url>http://ec2-13-234-112-225.ap-south-1.compute.amazonaws.com:8081/repository/filpkart-proxy/</url>
+          <layout>default</layout>
+          <snapshotPolicy>always</snapshotPolicy>
+        </repository>
+      </repositories>
+		
 	</distributionManagement>
 	
 	<build>
